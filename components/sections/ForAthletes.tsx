@@ -42,8 +42,8 @@ const ForAthletes = ({ onBookStrategyCall }: any) => {
             OUR STRATEGY.
           </h2>
           <p className="mb-8">
-            Whether you’re a high school recruit, college star, or NFL veteran,
-            your earning window is limited. We help you maximize every
+            Whether you&apos;re a high school recruit, college star, or NFL
+            veteran, your earning window is limited. We help you maximize every
             opportunity.
           </p>
 

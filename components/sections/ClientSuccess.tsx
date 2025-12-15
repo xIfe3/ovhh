@@ -23,7 +23,7 @@ const ClientSuccess = () => {
         <p className={subtitleClass}>CLIENT SUCCESS</p>
         <h2 className={`${titleClass} mb-3`}>REAL RESULTS</h2>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-16">
-          Our clients don’t just protect wealth—they multiply it
+          Our clients don&apos;t just protect wealth—they multiply it
         </p>
 
         {/* Results Grid */}

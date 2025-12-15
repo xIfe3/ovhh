@@ -3,8 +3,11 @@
 // Add onBookStrategyCall to the props list
 const HeroSection = ({ onBookStrategyCall }: any) => {
   return (
-    <section className="relative h-screen flex items-center justify-center">
+    // 👇 CHANGE 1: Use min-h-screen and a responsive padding to ensure content fits.
+    // We add padding-top/bottom to ensure space for the header and footer stats.
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-12 md:pt-0 md:pb-0">
       {/* 1. Background Image and Overlay */}
+      {/* The background remains full-screen coverage */}
       <div className="absolute inset-0">
         <img
           src="/hero.JPG"
@@ -21,8 +24,8 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
           ELITE WEALTH STRATEGY
         </p>
 
-        {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-8">
+        {/* Main Headline - Reduced font size slightly for small mobiles (text-5xl) */}
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 sm:mb-8">
           MONETIZE.
           <br />
           PROTECT.
@@ -31,14 +34,13 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
         </h1>
 
         {/* Sub-headline / Description */}
-        <p className="max-w-xl mx-auto text-sm md:text-base mb-10">
+        <p className="max-w-xl mx-auto text-sm md:text-base mb-8 sm:mb-10">
           Premium NIL and wealth strategy for elite athletes and high-net-worth
           individuals who refuse to settle for average.
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-20">
-          {/* 👇 CHANGE: onClick handler added */}
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12 sm:mb-20">
           <button
             onClick={onBookStrategyCall}
             className="border border-white text-white px-8 py-3 text-sm font-semibold hover:bg-white hover:text-black transition duration-300"
@@ -52,20 +54,21 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
         </div>
 
         {/* Stats Section */}
-        <div className="flex justify-center space-x-8 md:space-x-16 pt-6 border-t border-white border-opacity-30">
-          <div className="flex flex-col items-center">
+        {/* We use flex-wrap on small screens if necessary */}
+        <div className="flex justify-center space-x-4 md:space-x-16 pt-6 border-t border-white border-opacity-30 flex-wrap">
+          <div className="flex flex-col items-center p-2">
             <p className="text-3xl md:text-4xl font-bold">$127M+</p>
             <p className="text-xs uppercase tracking-wider mt-1">
               WEALTH PROTECTED
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center p-2">
             <p className="text-3xl md:text-4xl font-bold">340+</p>
             <p className="text-xs uppercase tracking-wider mt-1">
               ELITE CLIENTS
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center p-2">
             <p className="text-3xl md:text-4xl font-bold">98%</p>
             <p className="text-xs uppercase tracking-wider mt-1">
               SUCCESS RATE

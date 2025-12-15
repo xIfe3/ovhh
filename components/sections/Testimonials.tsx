@@ -1,7 +1,7 @@
 import { titleClass, subtitleClass } from "@/utils/stylesContent";
 
 const TestimonialCard = ({ quote, name, title, avatar }: any) => (
-  <div className="p-4 flex flex-col">
+  <div className="p-4 flex flex-col border-l-6 border-black">
     <blockquote className="text-lg italic leading-relaxed mb-6">
       &quot;{quote}&quot;
     </blockquote>
@@ -9,7 +9,7 @@ const TestimonialCard = ({ quote, name, title, avatar }: any) => (
       <img
         src={avatar}
         alt={name}
-        className="w-12 h-12 object-cover rounded-full mr-4"
+        className="w-12 h-12 object-cover rounded-xs mr-4"
       />
       <div>
         <p className="font-bold">{name}</p>
@@ -29,28 +29,28 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 gap-10">
           <TestimonialCard
-            quote="OVHH didn’t just help me sign deals—they taught me how to think like a business owner. My NIL income tripled in six months."
+            quote="OVHH didn't just help me sign deals—they taught me how to think like a business owner. My NIL income tripled in six months."
             name="MARCUS J."
             title="D1 RUNNING BACK"
-            avatar="/image_aad59f_marcus.jpg"
+            avatar="/testimonial.JPG"
           />
           <TestimonialCard
-            quote="I’ve worked with multiple advisors. OVHH is the only firm that actually understands high-performance wealth strategy."
+            quote="I've worked with multiple advisors. OVHH is the only firm that actually understands high-performance wealth strategy."
             name="DAVID R."
             title="CEO, TECH STARTUP"
-            avatar="/image_aad59f_david.jpg"
+            avatar="/testimonial.JPG"
           />
           <TestimonialCard
             quote="They saved me over $800K in taxes last year alone. That's more than I paid in fees over five years. Best investment I ever made."
             name="JAMES T."
             title="REAL ESTATE INVESTOR"
-            avatar="/image_aad59f_james.jpg"
+            avatar="/testimonial.JPG"
           />
           <TestimonialCard
             quote="OVHH helped me transition from the NFL to business ownership. Now I'm building generational wealth, not just spending it."
             name="ANDRE M."
             title="FORMER NFL LINEBACKER"
-            avatar="/image_aad59f_andre.jpg"
+            avatar="/testimonial.JPG"
           />
         </div>
       </div>
