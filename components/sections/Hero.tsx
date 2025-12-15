@@ -10,7 +10,7 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
       {/* The background remains full-screen coverage */}
       <div className="absolute inset-0">
         <img
-          src="/hero.JPG"
+          src="/hero.jpg"
           alt="Luxury private jet interior"
           className="w-full h-full object-cover"
         />
