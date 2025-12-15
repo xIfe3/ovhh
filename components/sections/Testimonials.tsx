@@ -50,7 +50,7 @@ const Testimonials = () => {
             quote="OVHH helped me transition from the NFL to business ownership. Now I'm building generational wealth, not just spending it."
             name="ANDRE M."
             title="FORMER NFL LINEBACKER"
-            avatar="/testimonial.JPG"
+            avatar="/testimonial.jpg"
           />
         </div>
       </div>

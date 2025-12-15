@@ -8,7 +8,7 @@ const ReadyToDominate = ({ onBookStrategyCall }: any) => {
       <div className="relative h-[60vh] flex items-center justify-center text-center overflow-hidden">
         {/* Background Image & Overlay */}
         <img
-          src="/ready.JPG"
+          src="/ready.jpg"
           alt="Luxury office view"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
