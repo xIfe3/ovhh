@@ -7,7 +7,7 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
       {/* 1. Background Image and Overlay */}
       <div className="absolute inset-0">
         <img
-          src="/your-private-jet-image.jpg"
+          src="/hero.JPG"
           alt="Luxury private jet interior"
           className="w-full h-full object-cover"
         />
@@ -22,7 +22,7 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
         </p>
 
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-none mb-8">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-8">
           MONETIZE.
           <br />
           PROTECT.

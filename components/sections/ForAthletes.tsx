@@ -28,7 +28,7 @@ const ForAthletes = ({ onBookStrategyCall }: any) => {
         {/* Left Image (Order reversed for this section) */}
         <div className="relative aspect-square md:aspect-auto h-[500px] order-2 md:order-1">
           <img
-            src="/image_aad600.jpg"
+            src="/forathletes.png"
             alt="Football player running"
             className="w-full h-full object-cover"
           />

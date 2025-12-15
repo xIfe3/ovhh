@@ -29,19 +29,19 @@ const ClientSuccess = () => {
         {/* Results Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           <CaseStudyCard
-            image="/image_aad5bd_col1.jpg" // Note: You'd need to crop the original image into three parts
+            image="/result1.png" // Note: You'd need to crop the original image into three parts
             category="COLLEGE ATHLETE"
             title="$2.4M NIL DEAL"
             description="Helped a D1 quarterback secure multi-year endorsement deals with three major brands while maintaining NCAA compliance."
           />
           <CaseStudyCard
-            image="/image_aad5bd_col2.jpg"
+            image="/result2.png"
             category="BUSINESS OWNER"
             title="$890K TAX SAVINGS"
             description="Restructured a tech founder's portfolio, reducing annual tax liability by 43% through strategic planning."
           />
           <CaseStudyCard
-            image="/image_aad5bd_col3.jpg"
+            image="/result3.png"
             category="NFL VETERAN"
             title="$12M PROTECTED"
             description="Safeguarded a retiring player's assets through trust structures and diversified investments for post-career income."

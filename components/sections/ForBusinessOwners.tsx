@@ -63,7 +63,7 @@ const ForBusinessOwners = ({ onScheduleConsultation }: any) => {
         {/* Right Image */}
         <div className="relative aspect-square md:aspect-auto h-[500px]">
           <img
-            src="/image_aad5e2.jpg"
+            src="/forbusinessowners.png"
             alt="Showroom of luxury sports cars"
             className="w-full h-full object-cover"
           />

@@ -1,4 +1,4 @@
-// pages/index.js
+"use client";
 
 import { useState } from "react";
 import Header from "../components/Header";
@@ -31,11 +31,11 @@ export default function Home() {
         <HeroSection onBookStrategyCall={openModal} />
 
         <BuiltForTheElite />
+        <OurServices />
         <ForAthletes onBookStrategyCall={openModal} />
         <ForBusinessOwners onScheduleConsultation={openModal} />
-        <OurServices />
-        <ClientSuccess />
         <TheProcess />
+        <ClientSuccess />
         <Testimonials />
 
         {/* The Footer CTA button must trigger openModal */}

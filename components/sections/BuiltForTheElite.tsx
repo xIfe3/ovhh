@@ -34,7 +34,7 @@ const BuiltForTheElite = () => {
         {/* Right Image */}
         <div className="relative aspect-square md:aspect-auto h-96">
           <img
-            src="/image_aad6b8.png"
+            src="/builtforelite.png"
             alt="Business meeting in a high-rise office"
             className="w-full h-full object-cover"
           />
