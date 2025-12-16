@@ -13,9 +13,9 @@ const BuiltForTheElite = () => {
           </h2>
           <p className="mb-6 max-w-md">
             OVHH isn't for everyone. We work exclusively with men and women
-            athletes from high school phenoms to NFL stars—and business owners
-            who understand that wealth isn't just earned, it's strategically
-            built.
+            athletes from high school phenoms to professional stars—and business
+            owners who understand that wealth isn't just earned, it's
+            strategically built.
           </p>
           <p className="mb-10 max-w-md">
             We exist because too many athletes and entrepreneurs lose millions
