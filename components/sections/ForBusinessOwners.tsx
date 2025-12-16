@@ -24,7 +24,10 @@ const ForBusinessOwners = ({ onScheduleConsultation }: any) => {
 
   return (
     <section className="py-24 bg-black text-white">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      {/* Container ensures proper spacing and grid layout */}
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        {" "}
+        {/* Changed items-start to items-center for better vertical alignment */}
         {/* Left Content */}
         <div>
           <p className={subtitleClass}>FOR BUSINESS OWNERS</p>
@@ -51,7 +54,6 @@ const ForBusinessOwners = ({ onScheduleConsultation }: any) => {
           ))}
 
           {/* CTA Button */}
-          {/* 👇 CHANGE: onClick handler added */}
           <button
             onClick={onScheduleConsultation}
             className="mt-8 bg-white text-black px-10 py-4 text-sm font-semibold hover:bg-gray-200 transition duration-300 open-modal-btn"
@@ -59,9 +61,9 @@ const ForBusinessOwners = ({ onScheduleConsultation }: any) => {
             SCHEDULE CONSULTATION
           </button>
         </div>
-
         {/* Right Image */}
-        <div className="relative aspect-square md:aspect-auto h-[500px]">
+        {/* 👇 FIX: Image container height for responsiveness */}
+        <div className="relative h-96 sm:h-[500px] md:h-auto md:min-h-[500px]">
           <img
             src="/forbusinessowners.png"
             alt="Showroom of luxury sports cars"

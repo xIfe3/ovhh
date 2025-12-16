@@ -24,16 +24,19 @@ const ForAthletes = ({ onBookStrategyCall }: any) => {
 
   return (
     <section className="py-24 bg-white text-black">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      {/* Container ensures proper spacing and grid layout */}
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        {" "}
+        {/* Changed items-start to items-center for better vertical alignment */}
         {/* Left Image (Order reversed for this section) */}
-        <div className="relative aspect-square md:aspect-auto h-[500px] order-2 md:order-1">
+        {/* 👇 FIX: Image container height for responsiveness */}
+        <div className="relative order-2 md:order-1 h-96 sm:h-[500px] md:h-auto md:min-h-[500px]">
           <img
             src="/forathletes.png"
             alt="Football player running"
             className="w-full h-full object-cover"
           />
         </div>
-
         {/* Right Content */}
         <div className="order-1 md:order-2">
           <p className={subtitleClass}>FOR ATHLETES</p>
@@ -60,7 +63,6 @@ const ForAthletes = ({ onBookStrategyCall }: any) => {
           ))}
 
           {/* CTA Button */}
-          {/* 👇 CHANGE: onClick handler added */}
           <button
             onClick={onBookStrategyCall}
             className="mt-8 bg-black text-white px-10 py-4 text-sm font-semibold hover:bg-gray-800 transition duration-300 open-modal-btn"
