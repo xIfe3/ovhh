@@ -22,13 +22,6 @@ const BuiltForTheElite = () => {
             to bad advice, poor planning, and predatory partnerships. We change
             that.
           </p>
-
-          {/* Icons (You'll need actual SVG/Icon components here, using placeholders) */}
-          <div className="flex space-x-4 text-3xl">
-            <span>🏆</span>
-            <span>📈</span>
-            <span>🛡️</span>
-          </div>
         </div>
 
         {/* Right Image */}

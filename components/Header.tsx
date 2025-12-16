@@ -11,11 +11,6 @@ const Header = () => {
         >
           OVHH
         </Link>
-
-        {/* Right: Navigation/Button (Place your actual navigation item here) */}
-        <div className="w-24 h-6 bg-white opacity-0.8">
-          {/* This is the white box placeholder from the image. Replace with a real link/button. */}
-        </div>
       </div>
     </header>
   );
