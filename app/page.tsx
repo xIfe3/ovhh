@@ -1,7 +1,10 @@
+// pages/index.js (or Home.js)
+
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react"; // 👈 CHANGE: Import useRef and useCallback
 import Header from "../components/Header";
+// ... (other imports)
 import HeroSection from "../components/sections/Hero";
 import BuiltForTheElite from "../components/sections/BuiltForTheElite";
 import ForAthletes from "../components/sections/ForAthletes";
@@ -12,37 +15,53 @@ import TheProcess from "../components/sections/TheProcess";
 import Testimonials from "../components/sections/Testimonials";
 import ReadyToDominate from "../components/sections/ReadyToDominate";
 import ModalForm from "../components/ModalForm"; // The new modal component
+import PartnershipSection from "@/components/sections/Partners";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // 👇 CHANGE 1: Create a ref to attach to TheProcess section
+  const processRef = useRef<HTMLDivElement>(null);
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  // Note: You must update the HeroSection, ForAthletes, ForBusinessOwners, and ReadyToDominate
-  // components to accept and use the openModal function on their buttons.
+  // 👇 CHANGE 2: Create a function to handle the scroll
+  const scrollToProcess = useCallback(() => {
+    if (processRef.current) {
+      processRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <>
       <Header />
 
       <main>
-        {/* The Hero section buttons must trigger openModal */}
-        <HeroSection onBookStrategyCall={openModal} />
+        {/* 👇 CHANGE 3: Pass the scroll function to HeroSection */}
+        <HeroSection
+          onBookStrategyCall={openModal}
+          onScrollToProcess={scrollToProcess}
+        />
 
         <BuiltForTheElite />
         <OurServices />
         <ForAthletes onBookStrategyCall={openModal} />
         <ForBusinessOwners onScheduleConsultation={openModal} />
-        <TheProcess />
+
+        {/* 👇 CHANGE 4: Attach the ref to TheProcess section */}
+        <div ref={processRef}>
+          <TheProcess />
+        </div>
+
         <ClientSuccess />
         <Testimonials />
 
-        {/* The Footer CTA button must trigger openModal */}
+        <PartnershipSection />
+
         <ReadyToDominate onBookStrategyCall={openModal} />
       </main>
 
-      {/* The Modal Component */}
       <ModalForm isOpen={isModalOpen} onClose={closeModal} />
     </>
   );

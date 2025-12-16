@@ -7,12 +7,6 @@ const CaseStudyCard = ({ image, category, title, description }: any) => (
     </p>
     <h3 className="text-xl font-bold mb-3">{title}</h3>
     <p className="text-sm text-gray-600 mb-6 flex-grow">{description}</p>
-    <a
-      href="#"
-      className="mt-auto text-xs uppercase tracking-widest font-semibold hover:text-gray-700"
-    >
-      VIEW CASE STUDY —
-    </a>
   </div>
 );
 

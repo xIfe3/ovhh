@@ -1,7 +1,7 @@
 // components/sections/Hero.js or components/HeroSection.js
 
 // Add onBookStrategyCall to the props list
-const HeroSection = ({ onBookStrategyCall }: any) => {
+const HeroSection = ({ onBookStrategyCall, onScrollToProcess }: any) => {
   return (
     // 👇 CHANGE 1: Use min-h-screen and a responsive padding to ensure content fits.
     // We add padding-top/bottom to ensure space for the header and footer stats.
@@ -48,7 +48,11 @@ const HeroSection = ({ onBookStrategyCall }: any) => {
             BOOK FREE STRATEGY CALL
           </button>
 
-          <button className="bg-white text-black px-8 py-3 text-sm font-semibold hover:bg-gray-200 transition duration-300">
+          {/* 👇 CHANGE 2: Attach the scroll handler to the button */}
+          <button
+            onClick={onScrollToProcess}
+            className="bg-white text-black px-8 py-3 text-sm font-semibold hover:bg-gray-200 transition duration-300"
+          >
             VIEW OUR PROCESS
           </button>
         </div>

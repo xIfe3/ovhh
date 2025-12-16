@@ -6,12 +6,6 @@ const ServiceCard = ({ icon, title, description }: any) => (
     {/* Icon placeholder */}
     <h3 className="text-xl font-bold mb-3">{title}</h3>
     <p className="text-sm text-gray-400 mb-6">{description}</p>
-    <a
-      href="#"
-      className="mt-auto text-xs uppercase tracking-widest font-semibold hover:text-gray-300"
-    >
-      LEARN MORE —
-    </a>
   </div>
 );
 
